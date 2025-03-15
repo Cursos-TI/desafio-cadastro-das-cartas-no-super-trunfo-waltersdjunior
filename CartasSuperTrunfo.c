@@ -7,16 +7,95 @@
 //Teste larissa
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    //Parametros da Primeira Carta
+
+    char c1Estado;
+
+    char c1Codigo[3];
+
+    char c1Cidade[20];
+    int c1Populacao;
+    float c1Area;
+    float c1PIB;
+    int c1NumeroDePontosTuristicos;
+
+    //Parametros da Segunda Carta
+
+    char c2Estado;
+    char c2Codigo[3];
+
+    char c2Cidade[20];
+    int c2Populacao;
+    float c2Area;
+    float c2PIB;
+    int c2NumeroDePontosTuristicos;
+
+
+    printf("Escolha Os Parametros Da Primeira Carta!\n");
+
+    printf("Estado: ");
+    scanf("%c", &c1Estado);
+
+    printf("Codigo: ");
+    scanf("%s", &c1Codigo);
+
+    printf("Cidade: ");
+    scanf("%s", &c1Cidade);
+
+    printf("Populacao: ");
+    scanf("%i", &c1Populacao);
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+    printf("Area: ");
+    scanf("%f", &c1Area);
+
+    printf("PIB: ");
+    scanf("%f", &c1PIB);
+
+    printf("Numero de Pontos Turisticos: ");
+    scanf("%i", &c1NumeroDePontosTuristicos);   
+
+    printf("\nEscolha Os Parametros Da Segunda Carta!\n");
+
+    printf("Estado: ");
+    scanf("%c", &c2Estado);
+
+    printf("Codigo: ");
+    scanf("%s", &c2Codigo);
+
+    printf("Cidade: ");
+    scanf("%s", &c2Cidade);
+
+    printf("Populacao: ");
+    scanf("%i", &c2Populacao);
     
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf("Area: ");
+    scanf("%f", &c2Area);
+
+    printf("PIB: ");
+    scanf("%f", &c2PIB);
+
+    printf("Numero de Pontos Turisticos: ");
+    scanf("%i", &c2NumeroDePontosTuristicos);
+
+    // Mostrar Todas as Cartas
+    printf("\nPrimeira Carta\n");
+    printf("Estado: %c\n", c1Estado);
+    printf("Codigo: %s\n", c1Codigo);
+    printf("Cidade: %s\n", c1Cidade);
+    printf("Populacao: %i\n", c1Populacao);
+    printf("Area %.2f\n", c1Area);
+    printf("PIB %.2f\n", c1PIB);
+    printf("Numero de Pontos Turisticos %i\n", c1NumeroDePontosTuristicos);
+
+    printf("\nSegunda Carta\n");
+    printf("Estado: %c\n", c2Estado);
+    printf("Codigo: %s\n", c2Codigo);
+    printf("Cidade: %s\n", c2Cidade);
+    printf("Populacao: %i\n", c2Populacao);
+    printf("Area %.2f\n", c2Area);
+    printf("PIB %.2f\n", c2PIB);
+    printf("Numero de Pontos Turisticos %i\n", c2NumeroDePontosTuristicos);
+
 
     return 0;
 }
